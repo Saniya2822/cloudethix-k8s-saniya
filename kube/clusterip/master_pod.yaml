@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-nginx
+  labels:
+    app: master-nginx
+spec:
+  containers:
+  - name: master-nginx
+    image: sanu28221/cloudethix_master_nginx_saniya:master_image
+    resources:
+    ports:
+      - containerPort: 80
